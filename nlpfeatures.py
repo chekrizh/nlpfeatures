@@ -65,13 +65,3 @@ def add_mean_characters_per_word(df, text_column):
     df['mean_characters_per_word'] = mean_characters_per_word(df[text_column]).tolist()
     return df
 
-
-test = pd.DataFrame({'text': [
-    "And let's say that we want to create the service that is our block for for a cube.",
-    "I want to listen the ports 80 and I want to expose this out of the cluster.",
-    "we're going to try and carry that forward to repeating the reporting here to the community on a bi weekly basis."
-]})
-res = feature_engineering(test, 'text')
-
-print(test)
-print(res)
